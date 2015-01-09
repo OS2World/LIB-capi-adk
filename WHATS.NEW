@@ -1,0 +1,27 @@
+
+The COMMON ISDN API 2.0 Application Development Kit  V1.6
+---------------------------------------------------------
+    - NetWare support
+
+
+The COMMON ISDN API 2.0 Application Development Kit  V1.5
+---------------------------------------------------------
+    - VxD interface function CAPI20_ISINSTALLED improved
+
+
+The COMMON ISDN API 2.0 Application Development Kit  V1.4
+---------------------------------------------------------
+    - OS/2 and Linux support
+    - improved ANSI-C conformity
+    - minor corrections und improvements
+
+
+The COMMON ISDN API 2.0 Application Development Kit  V1.3
+---------------------------------------------------------
+
+    - started providing "whats.new"
+    - added CAPI20.DLL and CAPI2032.DLL protocol DLLs,
+      check new DEBUG.DLL directory
+    - corrected CIPmask constants (connect.h)
+    - deleted sample CALLING_PARTY_NUMBER (main.c) due to problems
+      with some PBXs

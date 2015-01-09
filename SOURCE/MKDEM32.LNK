@@ -1,0 +1,11 @@
+-machine:i386 -debug:notmapped,full -debugtype:cv -subsystem:console kernel32.lib
+-OUT:demo32.exe
+c20msg.obj
+capi.obj
+connect.obj
+contr.obj
+data.obj
+id.obj
+init.obj
+main.obj
+..\c20lib\win32\cap2032d.lib

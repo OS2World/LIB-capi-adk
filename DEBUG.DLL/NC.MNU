@@ -1,0 +1,53 @@
+---CAPI.DLL---
+Data B3 Messages aus
+  patch -fcapi.dll -sTraceData -h00
+Data B3 Messages kurz (default)
+  patch -fcapi.dll -sTraceData -h01
+Data B3 Messages lang
+  patch -fcapi.dll -sTraceData -h02
+
+Kein GET_ & PUT_MESSAGE (default)
+  patch -fcapi.dll -sTraceAll -h00
+Auch GET_ & PUT_MESSAGE Protokollieren
+  patch -fcapi.dll -sTraceAll -h01
+
+Protokoll nur einmal ”ffnen/schlieáen (default)
+  patch -fcapi.dll -sCloseProt -h00
+Protokoll bei jeder Message ”ffnen/schlieáen
+  patch -fcapi.dll -sCloseProt -h01
+-
+---CAPI20.DLL---
+Data B3 Messages aus
+  patch -fcapi20.dll -sTraceData -h00
+Data B3 Messages kurz (default)
+  patch -fcapi20.dll -sTraceData -h01
+Data B3 Messages lang
+  patch -fcapi20.dll -sTraceData -h02
+
+Kein GET_ & PUT_MESSAGE (default)
+  patch -fcapi20.dll -sTraceAll -h00
+Auch GET_ & PUT_MESSAGE Protokollieren
+  patch -fcapi20.dll -sTraceAll -h01
+
+Protokoll nur einmal ”ffnen/schlieáen (default)
+  patch -fcapi20.dll -sCloseProt -h00
+Protokoll bei jeder Message ”ffnen/schlieáen
+  patch -fcapi20.dll -sCloseProt -h01
+-
+---CAPI2032.DLL---
+Data B3 Messages aus
+  patch -fcapi2032.dll -sTraceData -h00
+Data B3 Messages kurz (default)
+  patch -fcapi2032.dll -sTraceData -h01
+Data B3 Messages lang
+  patch -fcapi2032.dll -sTraceData -h02
+
+Kein GET_ & PUT_MESSAGE (default)
+  patch -fcapi2032.dll -sTraceAll -h00
+Auch GET_ & PUT_MESSAGE Protokollieren
+  patch -fcapi2032.dll -sTraceAll -h01
+
+Protokoll nur einmal ”ffnen/schlieáen (default)
+  patch -fcapi2032.dll -sCloseProt -h00
+Protokoll bei jeder Message ”ffnen/schlieáen
+  patch -fcapi2032.dll -sCloseProt -h01

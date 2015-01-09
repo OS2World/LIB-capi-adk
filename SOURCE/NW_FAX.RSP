@@ -1,0 +1,41 @@
+FORMAT NOVELL NLM 'AVM CAPI 2.0 FAXDEMO'
+Name NETWARE\FAXDEMO.NLM
+OPTION Copyright 'Copyright 1998, AVM GmbH Berlin. All rights reserved.'
+OPTION Version=1.00
+OPTION ScreenName 'AVM_FAXDEMO'
+OPTION ThreadName 'AVM FaxDemo'
+OPTION Stack=8k
+OPTION NODEFAULTLIBS
+OPTION CaseExact
+OPTION Verbose
+OPTION Map
+DEBUG ALL DEBUG NOVELL
+
+File netware\c20msg.obj
+File netware\capi.obj
+File netware\connect.obj
+File netware\contr.obj
+File netware\data.obj
+File netware\id.obj
+File netware\init.obj
+File netware\fax.obj
+File netware\faxmain.obj
+
+IMPORT CAPI_Register
+IMPORT CAPI_Release
+IMPORT CAPI_PutMessage
+IMPORT CAPI_GetMessage
+IMPORT CAPI_GetProfile
+IMPORT CAPI_GetManufacturer
+IMPORT CAPI_GetVersion
+IMPORT CAPI_GetSerialNumber
+
+IMPORT @%WATCOM%\NOVI\clib.imp
+IMPORT @%WATCOM%\NOVI\threads.imp
+IMPORT @%WATCOM%\NOVI\nlmlib.imp
+
+LIBRARY %WATCOM%\LIB386\NETWARE\clib3s.lib
+LIBRARY %WATCOM%\LIB386\plib3s.lib
+LIBRARY ..\c20lib\netware\CAP2032.LIB
+
+MODULE CLIB

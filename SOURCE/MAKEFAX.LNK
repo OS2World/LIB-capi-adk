@@ -1,0 +1,13 @@
+c20msg.obj +
+capi.obj +
+connect.obj +
+contr.obj +
+data.obj +
+id.obj +
+init.obj +
+fax.obj +
+faxmain.obj +
+,
+FAX.exe
+FAX
+/STACK:3072  ..\c20lib\dos\capi20ld.lib;

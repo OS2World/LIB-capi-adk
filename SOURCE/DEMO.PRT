@@ -1,0 +1,42 @@
++---------------------------------------------------------------------
+|   COMMON-ISDN-API   Development Kit      AVM-Berlin      Version 2.0
+|
+|                      Wed Feb 11 16:58:21 1998
++---------------------------------------------------------------------
+
+CONNECT_REQ                ID=001 #0x0000 LEN=0040     00:00:02:36
+  Controller/PLCI/NCCI            = 0x00000001
+  CIPValue                        = 0x0002
+  CalledPartyNumber               = <80>803
+  CallingPartyNumber              = default
+  CalledPartySubaddress           = default
+  CallingPartySubaddress          = default
+  BProtocol                      
+   B1protocol                     = 0x0000
+   B2protocol                     = 0x0000
+   B3protocol                     = 0x0000
+   B1configuration                = default
+   B2configuration                = default
+   B3configuration                = default
+  BC                              = default
+  LLC                             = default
+  HLC                             = default
+  AdditionalInfo                 
+   BChannelinformation            = default
+   Keypadfacility                 = default
+   Useruserdata                   = default
+   Facilitydataarray              = default
+
+CONNECT_CONF               ID=001 #0x0000 LEN=0014     00:00:02:42
+  Controller/PLCI/NCCI            = 0x00000101
+  Info                            = 0x0000
+***** state change slot 0 ID 0: D_ConnectPending *****
+
+DISCONNECT_IND             ID=001 #0x0002 LEN=0014     00:00:07:36
+  Controller/PLCI/NCCI            = 0x00000101
+  Reason                          = 0x3301
+Reason 0x3301: Protocol error layer 1 (broken line or B-channel removed by signalling protocol)
+
+DISCONNECT_RESP            ID=001 #0x0002 LEN=0012     00:00:07:42
+  Controller/PLCI/NCCI            = 0x00000101
+***** state change slot 0 ID 0: Disconnected *****

@@ -1,0 +1,12 @@
+c20msg.obj +
+capi.obj +
+connect.obj +
+contr.obj +
+data.obj +
+id.obj +
+init.obj +
+main.obj +
+,
+DEMO.exe
+DEMO
+  ..\c20lib\dos\capi20ld.lib;
